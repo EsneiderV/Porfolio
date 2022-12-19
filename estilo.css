@@ -521,6 +521,7 @@ footer a{
 /* SECCION RESPONSIVE */
 
 @media screen and (max-width:800px) {
+    /* seccion INICIO */
     .redes{
         display: none;
     }
