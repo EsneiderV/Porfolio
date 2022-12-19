@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>EV Desarrollo web</title>
+</head>
+
+<body>
+
+    <!-- SECCION INICIO  -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>EV</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- ICONOS DEL MUNU RESPONSIVE -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- ICONOS DE REDES SOCIALES -->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/esneider-vel%C3%A1squez-urrego-79a29925a" target="_blank" class="fa-brands fa-linkedin"></a>
+                        <a href="https://instagram.com/esneider.u?igshid=YmMyMTA2M2Y=" target="_blank" class="fa-brands fa-square-instagram"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100081837769263&mibextid=ZbWKwL" target="_blank" class="fa-brands fa-square-facebook"></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Esneider Velásquez</span>, Desarrollador Web.</h2>
+                <p class="descripcion">Soy tecnólogo en Análisis y Diseño de Sistemas de Información (ADSI) en Colombia.
+                    Me gusta trabajar en el front-end de la web.
+                    Este es mi sitio, "nombre del sitio" , donde comparto los proyectos paralelos en los que he estado
+                    trabajando.</p>
+                <a href="#portafolio">Ir a portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola, soy <span>Esneider Velásquez</span></h2>
+            <h3>Desarrollador web</h3>
+            <p>Soy graduado del SENA, tecnólogo en Análisis y Diseño de Sistemas de Información (ADSI). He hecho trabajo
+                como full-stack, aunque ahora me concentro principalmente en el front-end. Disfruto especialmente
+                trabajar con CSS.</p>
+            <p>Además de participar en el programa tecnológico Misión TIC 2022 en el que me capacité para tener
+                habilidades técnicas y blandas, adquirí conocimientos de programación de alto nivel al tomar cursos en
+                línea en Platzi.
+            </p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Tecnología Front-End</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p>El Front-end es enfocado en el usuario, en todo con lo que puede interactuar y lo que ve mientras navega. Brindandole asi una buena experiencia de usuario, inmersión y usabilidad son algunos de los objetivos que busco, y hoy en día hay una gran variedad de frameworks, preprocesadores y librerías que me ayudan en esta tarea.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Tecnología Back-End</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p>El Back-End hace referencia al proceso del servidor y más recientemente procesos en la nube del sitio web. Encargado asi del sistema que recoge y guarda información y la organizar. Es decir, todo aquello con lo que el usuario no interactúa directamente; por ejemplo, las APIs o paquetes de aplicaciones, las librerías y componentes del sistema.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Base de datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
+                <p>En el desarrollo de aplicaciones de software una de las piezas fundamentales son las bases de datos, este siendo el modelo más habitual para el almacenamiento, con persistencia, de la información que manejan las aplicaciones.
+                Los sistemas gestores de bases de datos que he utilizado son MySQL y MongoDB, siendo bases de datos relacionales y no-relacionales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div id="skills" class="contenedor-skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>HTML & CSS</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h3>AUPUR TV</h3>
+                    <h5>Cuenta con una valoración o calificación del desempeño de los trabajadores que permite a los mandos superiores informar de cómo se están desarrollando sus funciones dentro de la empresa, al igual que el inventario de esta.</h5>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h3>GEP</h3>
+                    <h5>Gestor de Paquetes de Envíos es un sistema por medio del cual los usuarios pueden programar la recogida de paquetes para su futuro envío y los repartidores poder recoger estos paquetes y entregarlos a tiempo.</h5>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h3>EDUCANDO S.A</h3>
+                    <h5>Software con funciones y roles múltiples, se logran agilizar tareas de la empresa, permitiendo así gestionar todos los bienes con los que esta cuenta, además registra nuevos pedidos que se realizan con diferentes proveedores, realizando esto de forma rápida y segura con el menor grado de erros.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contacto-contenedor">
+            <div class="redes-contacto">
+                <div class="redes-info-contenedor">
+                    <a class="fa-solid fa-square-phone"></a>
+                    <p class="info-redes">312 262 6159</p>
+                </div>
+                <div class="redes-info-contenedor">
+                    <a href="http://wa.me/573122626159" target="_blank" class="fa-brands fa-square-whatsapp"></a>
+                    <p class="info-redes">+57 312 262 6159</p>
+                </div>
+                <div class="redes-info-contenedor">
+                    <a class="fa-solid fa-envelope"></a>
+                    <p class="info-redes">esneidervelasquezurrego@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="redes-contacto">
+                <div class="redes-info-contenedor">
+                    <a href="https://www.linkedin.com/in/esneider-vel%C3%A1squez-urrego-79a29925a" target="_blank" class="fa-brands fa-linkedin"></a>
+                    <p class="info-redes">Esneider Velásquez Urrego</p>
+                </div>
+                <div class="redes-info-contenedor">
+                    <a href="https://instagram.com/esneider.u?igshid=YmMyMTA2M2Y=" target="_blank" class="fa-brands fa-square-instagram"></a>
+                    <p class="info-redes">esneider.u</p>
+                </div>
+                <div class="redes-info-contenedor">
+                    <a href="https://www.facebook.com/profile.php?id=100081837769263&mibextid=ZbWKwL" target="_blank" class="fa-brands fa-square-facebook"></a>
+                    <p class="info-redes">Esneider</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservador - 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
